@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'digit';
+  font-style: normal;
+  font-weight: 400;
+  src: local('digital'), url('./assets/fonts/digital-7.mono.ttf') format('truetype');
+}
+
+:root {
+  --rose: #E87037;
+  --secondary: #eaac10;
+  --light: #eeee;
+  --green: #66F507FF;
+  --dark-green: #4DB408FF;
+  --dark-gray: #525253F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(185deg, #0e100d,#8fa58f , black);
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border: 1px solid black;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 64px #00000033;
+  background-color: black;
+}
+
+.display {
+  margin: 6px;
+  padding: 16px;
+  position: relative;
+  z-index: 10;
+  outline: 10px solid black;
+  background-color: black;
+  text-align: right;
+  font-family: 'digit';
+  color: var(--green);
+  font-size: 44px;
+  font-weight: 300;
+  text-shadow: 1px 2px #2c2c2c;
+  box-shadow: inset -1px 1px 20px 1px;
+}
+
+.display span {
+  font-size: 20px;
+  word-wrap: break-word;
+  color: var(--dark-green);
+}
+
+.outher-edge {
+  height: 50px;
+  box-shadow: inset 4px 28px 114px -2px;
+  background: gray;
+}
